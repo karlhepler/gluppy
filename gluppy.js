@@ -49,6 +49,10 @@ function compileScripts() {
 
     // COMPILE!
     return gulp.src(options.all)
+        // Clean the output path
+        .pipe(plugins.gif(isProd, plugins.cleanDest(plugins.path.dirname(options.build.prod))))
+        .pipe(plugins.gif(isDev, plugins.cleanDest(plugins.path.dirname(options.build.dev))))
+        
         // Handle all errors via plumber - preventing broken pipes
         .pipe(plugins.plumber(options.plumber))
 

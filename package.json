@@ -1,6 +1,6 @@
 {
   "name": "gluppy",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A simpler js-only implementation of glup",
   "main": "gluppy.js",
   "scripts": {
@@ -24,6 +24,7 @@
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
     "gulp-cached": "^1.1.0",
+    "gulp-clean-dest": "^0.1.1",
     "gulp-concat": "^2.6.0",
     "gulp-filter": "^4.0.0",
     "gulp-if": "^2.0.1",
