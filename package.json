@@ -1,0 +1,42 @@
+{
+  "name": "gluppy",
+  "version": "1.0.0",
+  "description": "A simpler js-only implementation of glup",
+  "main": "gluppy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oldtimeguitarguy/gluppy.git"
+  },
+  "author": "Karl Hepler <karl.hepler@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oldtimeguitarguy/gluppy/issues"
+  },
+  "homepage": "https://github.com/oldtimeguitarguy/gluppy#readme",
+  "dependencies": {
+    "babel-preset-es2015": "^6.14.0",
+    "bower-files": "^3.13.3",
+    "browser-sync": "^2.15.0",
+    "extend": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-cached": "^1.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-filter": "^4.0.0",
+    "gulp-if": "^2.0.1",
+    "gulp-jshint": "^2.0.1",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-remember": "^0.3.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0",
+    "jshint": "^2.9.3",
+    "jshint-stylish": "^2.2.1",
+    "path": "^0.12.7",
+    "yargs": "^5.0.0"
+  }
+}
