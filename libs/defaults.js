@@ -7,6 +7,11 @@ module.exports = {
     },
     plumber: {},
     browserSync: {},
-    bower: {},
+    bower: {
+        includeDev: true,
+        paths: {
+            bowerDirectory: 'bower_components'
+        }
+    },
     uglify: {}
 };

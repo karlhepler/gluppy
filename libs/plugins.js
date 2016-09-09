@@ -5,12 +5,12 @@ module.exports = require('gulp-load-plugins')({
         'yargs',
         'extend',
         'browser-sync',
-        'bower-files',
+        'main-bower-files',
         'path'
     ],
     scope: ['dependencies'],
     rename: {
         'gulp-if': 'gif',
-        'bower-files': 'bower'
+        'main-bower-files': 'bower'
     }
 });
