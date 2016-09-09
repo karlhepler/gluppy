@@ -5,13 +5,21 @@ A simpler js-only implementation of glup
 ```javascript
 var gluppy = require('../gluppy');
 
-gluppy({
+// Need to specify the paths
+var paths = {
     src: `scripts/**/*.js`,
-    build: {
+    dest: {
         dev: `build.dev.js`,
-        prod: `build.prod.js`
+        dist: `build.dist.js`
     }
-});
+};
+
+// Check libs/defaults for what can be set
+var options = {
+    //
+};
+
+gluppy(paths, options);
 ```
 
 ## Run Gulp
