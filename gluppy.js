@@ -127,8 +127,11 @@ function watch() {
             }
         });
 
-    // Build when bower changes
-    gulp.watch(bowerFiles(), ['default']);
+    // Build when bower changes,
+    // only if we haven't disabled includes
+    if (! isRunningSolo()) {
+        gulp.watch(bowerFiles(), ['default']);
+    }
 
     // Reload the browser after the builds change
     gulp.watch([options.paths.dest.dev, options.paths.dest.dist], plugins.browserSync.reload)
@@ -258,7 +261,22 @@ function useSourcemaps() {
  * @return {array}
  */
 function bowerFiles() {
+    // Return an empty array if we have disabled includes
+    if (isRunningSolo()) {
+        return [];
+    }
+
     return plugins.bower(options.bower).map(function(path) {
         return plugins.path.relative(process.cwd(), path);
     })
+}
+
+/**
+ * Determine if we should ignore includes
+ * during the compilation process
+ *
+ * @return {boolean}
+ */
+function isRunningSolo() {
+    return plugins.yargs.argv.solo;
 }

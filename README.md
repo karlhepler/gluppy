@@ -27,3 +27,4 @@ gluppy(paths, options);
 1. Normal development build `gulp`
 2. Minified distribution build `gulp --[distribution|distro|dist]`
 3. Force sourcemaps on distribution builds `gulp --[distribution|distro|dist] --sourcemaps`
+4. Prevent bower_components from being included in the build (running solo) `gulp --solo`
