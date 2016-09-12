@@ -229,7 +229,9 @@ function pathsAreValid(paths) {
  * @return {Boolean}
  */
 function isDist() {
-    return plugins.yargs.argv.production;
+    return plugins.yargs.argv.distribution
+        || plugins.yargs.argv.distro
+        || plugins.yargs.argv.dist;
 }
 
 /**

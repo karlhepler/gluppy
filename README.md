@@ -25,5 +25,5 @@ gluppy(paths, options);
 ## Run Gulp
 
 1. Normal development build `gulp`
-2. Minified production build `gulp --production`
-3. Force sourcemaps on production builds `gulp --production --sourcemaps`
+2. Minified distribution build `gulp --[distribution|distro|dist]`
+3. Force sourcemaps on distribution builds `gulp --[distribution|distro|dist] --sourcemaps`
