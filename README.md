@@ -3,7 +3,7 @@ A simpler js-only implementation of glup
 
 ## Setup Your Gulp File
 ```javascript
-var gluppy = require('../gluppy');
+var gluppy = require('gluppy');
 
 // Need to specify the paths
 var paths = {
