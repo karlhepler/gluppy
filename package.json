@@ -1,6 +1,6 @@
 {
   "name": "gluppy",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "A simpler js-only implementation of glup",
   "main": "gluppy.js",
   "scripts": {
