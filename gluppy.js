@@ -209,7 +209,7 @@ function pathsAreValid(paths) {
 
     // Create a relative paths array
     // based on the src paths
-    let relativePaths = Array.isArray(paths.src) ? paths.src : [paths.src];
+    let relativePaths = Array.isArray(paths.src) ? paths.src.slice(0) : [paths.src];
 
     // Push in dest paths
     relativePaths.push(paths.dest.dev);
